@@ -83,7 +83,15 @@ plugins {
 
 #### Archivo: `android\gradle\wrapper\gradle-wrapper.properties`
 1. Configurar Gradle versión 8.10.2:
+```properties
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.10.2-all.zip
+```
 
+---
 
 ##### Firestore
 
@@ -214,9 +222,4 @@ dev_dependencies:
 ### Eliminación de firebase_options
 Si deseas implementar otra base de datos Firebase, elimina el archivo `firebase_options.dart` y ajusta las configuraciones en `main.dart`.
 
-```properties
-distributionBase=GRADLE_USER_HOME
-distributionPath=wrapper/dists
-zipStoreBase=GRADLE_USER_HOME
-zipStorePath=wrapper/dists
-distributionUrl=https\://services.gradle.org/distributions/gradle-8.10.2-all.zip
+ ---
